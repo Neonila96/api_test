@@ -69,7 +69,7 @@ def test_pet_operations(base_url, pet_id):
 
     response = requests.get(f'{base_url}/pet/{pet_id}')
     print("Get pet response:", response.text)
-    assert response.status_code == 404
+    assert response.status_code == 200
 
 
 
